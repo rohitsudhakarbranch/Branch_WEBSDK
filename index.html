@@ -1,32 +1,43 @@
 <html>
 <head>
     <script>
-        // load Branch
-(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking qrCode".split(" "), 0);
+    // load Branch
+    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking qrCode".split(" "), 0);
 // init Branch
 branch.init('key_live_gk3ZN4DhhcFOWsLnCkrQCjaowqlGmkJb');
-  </script>
-    <link rel="stylesheet" href="style.css">
-    <title>
-        My new project
-    </title>
-   
-    <body>
-        <script src="myscripts.js"></script>
-        <h1> BRANCH WEB SDK</h1>
-        <button onclick="SendCommereceEvent()">COMMERECE</button>
-        <button onclick="SendCUstomEvent()">CUSTOM</button>
-        <button onclick="SendContentEvent()">Content</button>
-        <button onclick="SendLifCEvent()">Lifecycle</button>
-        <button  onclick="CreateDeepLink()">New DEEPLINK</button>
-        <h2 id="Deeplink_button"></h2>
+    </script>
+     <link rel="stylesheet" href="style.css">
+<body>
+    
+    <div id="container">
+
+        <div id="header">
+            <h1>BRANCH SDK</h1>
+        </div>
+        <div id="content">
+        <button class="button-15" role="button" onclick="SendCommereceEvent()">COMMERECE</button>
+        <button class="button-15" role="button" onclick="SendCUstomEvent()">CUSTOM</button>
+        <button class="button-15" role="button" onclick="SendContentEvent()">Content</button>
+        <button class="button-15" role="button" onclick="SendLifCEvent()">Lifecycle</button>
         <h2 id="Purchase_Button"></h2>
-        <h2 id="Content_Button"></h2>
         <h2 id="Custom_Button"></h2>
-        <h2 id="Lifecycle_Button"></h2>
+        <h2 id="Content_Button"></h2>
+         <h2 id="Lifecycle_Button"></h2>
        
-    </body>
+        <script src="scripts/myscripts.js"></script>
+        </div>
+        <div id="content2">
+            <button class="button-15" role="button" onclick="CreateDeepLink()">New DEEPLINK</button>
+            <h2 id="Deeplink_button"></h2>
+        </div>
+        <div id="footer">
+            Copyright &copy; 2023 Rohit Sudhakar
+        </div>
+    </div>
+    <script src="scripts/myscripts.js"></script>
+</body>
 </head>
+
 
 
 </html>
