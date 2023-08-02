@@ -766,9 +766,9 @@ function SendLifCEvent(){
 
 function CreateDeepLink(){
 var linkData = {
-    campaign: 'content 123',
-    channel: 'facebook',
-    feature: 'dashboard',
+    campaign: 'WebSITE_LINK 123',
+    channel: 'WebSITE_LINK',
+    feature: 'WebSITE_LINK',
     stage: 'new user',
     tags: [ 'tag1', 'tag2', 'tag3' ],
     alias: '',
