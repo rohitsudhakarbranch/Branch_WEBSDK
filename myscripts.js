@@ -786,6 +786,7 @@ var linkData = {
   branch.link(linkData, function(err, link) {
     console.log(link);
     document.getElementById("Output_Button2").innerHTML = link;
+    document.getElementById('Output_Button2').href = link
   });
 }
 
@@ -794,6 +795,7 @@ function ReadDeepLink(){
 branch.data(function(err, data) {
     console.log(err, data);
     document.getElementById("Output_Button2").innerHTML = data;
+    
   });
 }
 
